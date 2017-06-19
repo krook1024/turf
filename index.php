@@ -33,7 +33,7 @@
 			});
 			
 			$(document).ready(function() {
-				scrMapTo(5100/2, 4600/2);
+				scrMapTo(5100, 4600);
 
 				$(".turf").hide();
 				$(".faction").click(function() {
@@ -43,7 +43,7 @@
 			
 			function scrMapTo(x, y)
 			{
-				$("#viewport").animate({scrollTop: y-(($(window).height())*0.5), scrollLeft: x-(($(window).width())*0.5)},4000);
+				$("#viewport").animate({scrollTop: y-(($(window).height())*0.5), scrollLeft: x-(($(window).width())*0.5)},1000);
 			}
 
 		</script>
